@@ -59,9 +59,7 @@ The accuracy of the final proposed model relies on the processes of data cleanin
  
 
 ## **II: Business Report 📰:**
-A dashboard summarizing the main results can be found at the following link:
-
-### [Business Report](https://infograph.venngage.com/pl/5lQsdECOi68)
+A dashboard summarizing the main results can be found at the following link: ## [Business Report](https://infograph.venngage.com/pl/5lQsdECOi68)
 
 
 ## **III. Summary of Results and Analysis 📈**:
