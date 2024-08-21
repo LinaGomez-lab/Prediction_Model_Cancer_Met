@@ -45,6 +45,7 @@ The accuracy of the final proposed model relies on the processes of data cleanin
 
 
  * **Feature Engineering:**
+   
   - **New features:** Climate Change was calculated through a two-step process: Step 1: Calculate the standard deviation of temperatures for each month from 2013 to 2018; and Step 2: Compute the mean of these monthly temperature standard deviations by ZIP code (3-digit). In Step 1, if there were no climate change, we would expect the monthly standard deviations to be zero. In Step 2, the mean is calculated by ZIP code, capturing variations in climate change impact across different areas. The variable **"Climate Change"** has a mean value of 3.1°F, indicating that average temperatures have increased by 3.1°F. The minimum value is 1.3°F, and the maximum value is 4.6°F.
 
   - **Data Heterogeneity:** Robust Scaling and different Ordinal Encoding techniques were applied. 
