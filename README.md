@@ -63,3 +63,28 @@ A dashboard summarizing the main results can be found at the following link:
 
 ### [Business Report](https://infograph.venngage.com/pl/5lQsdECOi68)
 
+
+## **III. Summary of Results and Analysis 📈**:
+
+* **What Worked:**
+
+  - Corrected outlier values for BMI using upper bound limits.
+  - Handled missing values through a sequential imputation technique that considers information from different levels based on location.
+  - Created the "Climate Change" feature to address the impact of this environmental factor.
+  - Applied a customized cross-validation technique, combining StratifiedKFold with group information from a 'breast_cancer_diagnosis_code' variable.
+  - Used Optuna for optimization when necessary. 
+
+* **What Didn't Work:**
+
+  - Experiment with different scaling techniques such as StandardScaler or MinMaxScaler. RobustScaler demonstrated better performance due to its handling of outlier values.
+  - Testing various encoding techniques like LabelEncoder, OrdinalEncoder, OneHotEncoder, HashingEncoder, and BinaryEncoder for complex categorical variables. CatBoost Regressor performed exceptionally well by effectively managing categorical variable information within the model.
+  - Attempting to apply NLP techniques for the variable 'breast_cancer_diagnosis_desc' did not yield the desired improvements in model performance. CatBoost was effective enough for handling this variable without additional NLP processing.
+
+## **Conclusion**
+
+The best model performance was achieved using a CatBoost model, with cross-validation conducted through a customized StratifiedKFold per group. These groups were created based on the 'breast_cancer_diagnosis_code' information. The accuracy of the final proposed model depends on thorough data cleaning, feature engineering, and model training. Its relevance was established by leveraging business-related healthcare information, specifically in the context of breast cancer.
+
+The main features account for 95.9% of the predictive power, where:
+  - Medical Diagnosis Information (76.2%): include breast cancer diagnosis code (42.8%), breast cancer diagnosis description (26.8%), and metastatic cancer diagnosis code (6.8%).
+  - Patient Information (10.4%): Include Age, Race, BMI     
+  - Legal, Local (Regional), or Environmental (9.3%): includes payer type, patient state, patient zip3, and climate change by zip3. 
