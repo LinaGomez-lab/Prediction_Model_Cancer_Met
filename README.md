@@ -85,4 +85,7 @@ The best model performance was achieved using a CatBoost model, with cross-valid
 The main features account for 95.9% of the predictive power, where:
   - Medical Diagnosis Information (76.2%): include breast cancer diagnosis code (42.8%), breast cancer diagnosis description (26.8%), and metastatic cancer diagnosis code (6.8%).
   - Patient Information (10.4%): Include Age, Race, BMI     
-  - Legal, Local (Regional), or Environmental (9.3%): includes payer type, patient state, patient zip3, and climate change by zip3. 
+  - Legal, Local (Regional), or Environmental (9.3%): includes payer type, patient state, patient zip3, and climate change by zip3.
+  - 
+
+## Related skills: Managing complex datasets and Prediction
