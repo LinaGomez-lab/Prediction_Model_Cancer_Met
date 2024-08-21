@@ -32,7 +32,7 @@ The accuracy of the final proposed model relies on the processes of data cleanin
 
   - **Literature** recognizes age, race, BMI, and environmental factors like climate change as risk factors for breast cancer. Additional factors, such as payer type and patient state—related to state-level regulatory, legislative, or environmental variables—were considered as main features in the preselection process.
 
-  - During **model training**, Optuna was used to select from other sociodemographic factors related to income, education levels, and barriers to healthcare access, based on accuracy metrics.
+  - **During model training**, Optuna was used to select from other sociodemographic factors related to income, education levels, and barriers to healthcare access, based on accuracy metrics.
 
 * **Data Cleaning:**
 
@@ -42,7 +42,6 @@ The accuracy of the final proposed model relies on the processes of data cleanin
   The variables metastatic_first_novel_treatment_type and metastatic_first_novel_treatment were dropped because they contained data for only 13 out of 13,173 observations.
 
   - **Variety (handling text data):** Variables requiring special treatment include 'breast_cancer_diagnosis_code', which needs to be addressed with different versions of the International Classification of Diseases (ICD9 vs. ICD10), and 'breast_cancer_diagnosis_desc', which involves handling text data for variable descriptions.  
-
 
  * **Feature Engineering:**
    
