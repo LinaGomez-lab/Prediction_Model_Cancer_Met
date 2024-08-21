@@ -75,7 +75,7 @@ A dashboard summarizing the main results can be found at the following link: [Bu
 
 * **What Didn't Work:**
 
-  - Use a multivariable or KNN imputation strategy for key features. 
+  - Use multivariable or KNN imputation strategies for key features. 
   - Experiment with different scaling techniques such as StandardScaler and MinMaxScaler. RobustScaler demonstrated better performance due to its ability to handle outlier values  - Testing various encoding techniques like LabelEncoder, OrdinalEncoder, OneHotEncoder, HashingEncoder, and BinaryEncoder for complex categorical variables. CatBoost Regressor performed exceptionally well by effectively managing categorical variable information within the model.
   - Attempting to apply NLP techniques for the variable 'breast_cancer_diagnosis_desc' did not yield the desired improvements in model performance. CatBoost was effective enough for handling this variable without additional NLP processing.
   - Applying PCA or t-SNE for dimensionality on sociodemographic variables.
