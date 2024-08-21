@@ -55,7 +55,7 @@ The accuracy of the final proposed model relies on the processes of data cleanin
 
   - **Models:** Models trained include 'CatBoost', 'XGBoost', 'LightGBM', 'Gradient Boosting', 'Random Forest', 'XGBRFRegressor', 'Extra Trees Regressor', 'AdaBoost Regression', 'KNeighbors Regressor', 'Ridge', and 'SVR'. To reduce overfitting, 'Stacking' and 'Voting' ensemble techniques were applied. Feature importance analysis was conducted for the top three models. 
 
-  - **Imbalanced data:** A crucial challenge for model performance in this project is managing imbalanced data. The target variable, 'metastatic_diagnosis_period' (in days), is highly concentrated with zero values and exhibits right skewness. Additionally, the distribution of 'breast_cancer_diagnosis_code' influences the distribution of other key feature variables in the dataset, particularly for ICD-9 versus ICD-10 versions. This challenge was addressed in the cross-validation process with a customized StratifiedKFold per group, where the group was created using the 'breast_cancer_diagnosis_code' information.
+  - **Imbalanced data:** A crucial challenge for model performance in this project was managing imbalanced data. The target variable, 'metastatic_diagnosis_period' (in days), is highly concentrated with zero values and exhibits right skewness. Additionally, the distribution of 'breast_cancer_diagnosis_code' influences the distribution of other key feature variables in the dataset, particularly for ICD-9 versus ICD-10 versions. This challenge was addressed in the cross-validation process with a customized StratifiedKFold per group, where the group was created using the 'breast_cancer_diagnosis_code' information.
 
   - **Hyperparameters and optimization:** In different stages, GridSearchCV or Optuna were used for fine-tuning and optimization processes.
  
@@ -70,8 +70,7 @@ A dashboard summarizing the main results can be found at the following link: [Bu
 
   - Corrected outlier values for BMI using upper bound limits.
   - Handled missing values through a sequential imputation technique that considers information from different levels based on location.
-  - Created the "Climate Change" feature to address the impact of this environmental factor.
-  - Applied a customized cross-validation technique, combining StratifiedKFold with group information from a 'breast_cancer_diagnosis_code' variable.
+  - Created the 'Climate Change' feature using the average deviation in temperatures by month over the years to address the impact of this environmental factor. This variable is available at the 3-digit zip code level.  - Applied a customized cross-validation technique, combining StratifiedKFold with group information from a 'breast_cancer_diagnosis_code' variable.
   - Used Optuna for optimization when necessary.
 
 * **What Didn't Work:**
@@ -79,7 +78,8 @@ A dashboard summarizing the main results can be found at the following link: [Bu
   - Use a multivariable or KNN imputation strategy for key features. 
   - Experiment with different scaling techniques such as StandardScaler and MinMaxScaler. RobustScaler demonstrated better performance due to its ability to handle outlier values  - Testing various encoding techniques like LabelEncoder, OrdinalEncoder, OneHotEncoder, HashingEncoder, and BinaryEncoder for complex categorical variables. CatBoost Regressor performed exceptionally well by effectively managing categorical variable information within the model.
   - Attempting to apply NLP techniques for the variable 'breast_cancer_diagnosis_desc' did not yield the desired improvements in model performance. CatBoost was effective enough for handling this variable without additional NLP processing.
-  - Applying PCA or t-SNE for dimensionality on sociodemographic variables. 
+  - Applying PCA or t-SNE for dimensionality on sociodemographic variables.
+  - Other definitions for Climate Change. 
 
 ## **Conclusion**
 
