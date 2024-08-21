@@ -70,7 +70,7 @@ A dashboard summarizing the main results can be found at the following link: [Bu
 
   - Corrected outlier values for BMI using upper bound limits.
   - Handled missing values through a sequential imputation technique that considers information from different levels based on location.
-  - Created the 'Climate Change' feature using the average deviation in temperatures by month over the years to address the impact of this environmental factor. This variable is available at the 3-digit zip code level.  - Applied a customized cross-validation technique, combining StratifiedKFold with group information from a 'breast_cancer_diagnosis_code' variable.
+  - Created the 'Climate Change' feature using the average deviation in temperatures by month over the years, to address the impact of this environmental factor. This variable is available at the 3-digit zip code level.  - Applied a customized cross-validation technique, combining StratifiedKFold with group information from a 'breast_cancer_diagnosis_code' variable.
   - Used Optuna for optimization when necessary.
 
 * **What Didn't Work:**
