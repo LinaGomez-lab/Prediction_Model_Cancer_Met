@@ -4,7 +4,7 @@
 
 ### **Context:**
 
-This project is part of the Women in Data Science (WiDS) Datathon 2024 (Challenge 2), focusing on a healthcare issue crucial for advancing equity for women globally. The datathon aims to identify potential disparities in treatment and investigate the underlying factors contributing to these biases, including demographic and societal elements. Addressing healthcare inequity is a global challenge with a significant impact on women’s health, which is vital for the well-being of societies and economies.
+This project is part of the Women in Data Science (WiDS) Datathon 2024 (Challenge 2), focusing on a healthcare issue crucial for advancing equity for women globally. The Datathon aims to identify potential disparities in treatment and investigate the underlying factors contributing to these biases, including demographic and societal elements. Addressing healthcare inequity is a global challenge with a significant impact on women’s health, which is vital for the well-being of societies and economies.
 
 ### **Objective:**
 This project proposes a predictive model to estimate the time to metastatic cancer diagnosis in breast cancer patients, identifying key features that influence this timeline.
@@ -19,7 +19,7 @@ The Oncology Dataset was provided by WiDS and Gilead Sciences. It includes infor
 ### **Data Dictionary**
 
 * Main variables (16): patient_id, patient_race, payer_type, patient_state, patient_zip3, Region, Division, patient_gender, bmi, breast_cancer_diagnosis_code, breast_cancer_diagnosis_desc, metastatic_cancer_diagnosis_code, metastatic_first_novel_treatment, metastatic_first_novel_treatment_type, metastatic_diagnosis_period.
-* Sociodemographic variables(64): Includes average participation by ZIP code (3-digit) segmented by age group, marital status, income levels, education levels, employment statud, race, and other factors.
+* Sociodemographic variables(64): Includes average participation by ZIP code (3-digit) segmented by age group, marital status, income levels, education levels, employment status, race, and other factors.
 * Monthly temperatures by ZIP code (72): Average temperatures by ZIP code (3-digit) from January 2013 to December 2018.
 
 For a more detailed data description, follow this link. [Datathon WiDS 2024-Challenge 2](https://www.kaggle.com/competitions/widsdatathon2024-challenge2/data)
@@ -45,9 +45,9 @@ The accuracy of the final proposed model relies on the processes of data cleanin
 
  * **Feature Engineering:**
 
-  - **New features:** Climate Change was calculated through a two-step process: Step 1: Calculate the standard deviation of temperatures for each month from 2013 to 2018; and Step 2: Compute the mean of these monthly temperature standard deviations by ZIP code (3-digit). In Step 1, if there were no climate change, we would expect the monthly standard deviations to be zero. In Step 2, the mean is calculated by ZIP code, capturing variations in climate change impact across different areas. The variable **"Climate Change"** has a mean value of 3.1°F, indicating that average temperatures have increased by 3.1°F. The minimum value is 1.3°F, and the maximum value is 4.6°F.
+    - **New features:** Climate Change was calculated through a two-step process: Step 1: Calculate the standard deviation of temperatures for each month from 2013 to 2018; and Step 2: Compute the mean of these monthly temperature standard deviations by ZIP code (3-digit). In Step 1, if there were no climate change, we would expect the monthly standard deviations to be zero. In Step 2, the mean is calculated by ZIP code, capturing variations in climate change impact across different areas. The variable *"Climate Change"* has a mean value of 3.1°F, indicating that average temperatures have increased by 3.1°F. The minimum value is 1.3°F, and the maximum value is 4.6°F.
 
-  - **Data Heterogeneity:** Robust Scaling and different Ordinal Encoding techniques were applied.
+    - **Data Heterogeneity:** Robust Scaling and different Ordinal Encoding techniques were applied.
 
 * **Model Training:**
 
