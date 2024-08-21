@@ -1,4 +1,4 @@
-# Prediction-Model---Catboost
+# Prediction Model: CatBoost using a Custom StratifiedKFold Cross-Validation by Groups
 
 ## **I. Project Description**
 
