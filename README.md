@@ -66,6 +66,14 @@ A dashboard summarizing the main results can be found at the following link: [Bu
 
 ## **III. Summary of Results and Analysis 📈**:
 
+* **What Worked:**
+
+  - Corrected outlier values for BMI using upper bound limits.
+  - Handled missing values through a sequential imputation technique that considers information from different levels based on location.
+  - Created the "Climate Change" feature to address the impact of this environmental factor.
+  - Applied a customized cross-validation technique, combining StratifiedKFold with group information from a 'breast_cancer_diagnosis_code' variable.
+  - Used Optuna for optimization when necessary.
+
 * **What Didn't Work:**
 
   - Experiment with different scaling techniques such as StandardScaler and MinMaxScaler. RobustScaler demonstrated better performance due to its ability to handle outlier values  - Testing various encoding techniques like LabelEncoder, OrdinalEncoder, OneHotEncoder, HashingEncoder, and BinaryEncoder for complex categorical variables. CatBoost Regressor performed exceptionally well by effectively managing categorical variable information within the model.
