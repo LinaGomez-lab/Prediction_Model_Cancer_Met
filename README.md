@@ -94,4 +94,7 @@ The main features account for 95.9% of the predictive power, with the following 
   - Legal, Local (Regional), or Environmental (9.3%): includes payer type, patient state, patient zip3, and climate change by zip3.
 
 Other factors included were Commute Time, Education (Highest and Lowest Levels), and Household Income ($35k-$50k). Together, they account for 4.1% of the predictive power.
+
+We recognize how powerful the CatBoost model was for handling a project with many, and diverse categorical variables.
+
 ### Related skills: Managing complex datasets and Prediction
