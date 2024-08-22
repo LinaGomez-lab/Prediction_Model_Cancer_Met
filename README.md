@@ -87,6 +87,7 @@ The best model performance was achieved using 14 features to explain the metasta
 
 The accuracy of the final proposed model relies on thorough data cleaning, feature engineering, and model training. Its relevance was underscored by leveraging business-related healthcare information, specifically in the context of breast cancer.
 
+We recognize how powerful the CatBoost model was for handling a project with many, and diverse categorical variables.
 The main features account for 95.9% of the predictive power, with the following distribution:
   - Medical Diagnosis Information (76.2%): include breast cancer diagnosis code (42.8%), breast cancer diagnosis description (26.8%), and metastatic cancer diagnosis code (6.8%).
   - Patient Information (10.4%): include Age, Race, BMI     
