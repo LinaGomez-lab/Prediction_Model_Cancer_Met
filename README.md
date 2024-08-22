@@ -91,9 +91,9 @@ We recognize how powerful the CatBoost model was for handling a project with man
 The main features account for 95.9% of the predictive power, with the following distribution:
   - Medical Diagnosis Information (76.2%): include breast cancer diagnosis code (42.8%), breast cancer diagnosis description (26.8%), and metastatic cancer diagnosis code (6.8%).
   - Patient Information (10.4%): include Age, Race, BMI     
-  - Legal, Local (Regional), or Environmental (9.3%): includes payer type, patient state, patient zip3, and climate change by zip3.
+  - Regional (9.3%): The regional dimension reflects and captures legal, regulatory, local, and environmental influences. It includes factors such as payer type, patient state, patient zip3, and climate change by zip3.  
 
-Other factors included were Commute Time, Education (Highest and Lowest Levels), and Household Income ($35k-$50k). Together, they account for 4.1% of the predictive power.
+Other factors included were: Commute Time, Education (Highest and Lowest Levels), and Household Income ($35k-$50k). Together, they account for 4.1% of the predictive power.
 
 We recognize how powerful the CatBoost model was for handling a project with many, and diverse categorical variables.
 
