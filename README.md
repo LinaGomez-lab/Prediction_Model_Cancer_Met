@@ -72,6 +72,7 @@ A dashboard summarizing the main results can be found at the following link: [Bu
   - Handled missing values through a sequential imputation technique that considers information from different levels based on location.
   - Created the 'Climate Change' feature using the average deviation in temperatures by month over the years, to address the impact of this environmental factor. This variable is available at the 3-digit zip code level.  - Applied a customized cross-validation technique, combining StratifiedKFold with group information from a 'breast_cancer_diagnosis_code' variable.
   - Used Optuna for optimization when necessary.
+  - Applying a strategy that effectively addressed the distributional challenges simultaneously in both the target variable and those associated with the primary ICD feature was crucial. This approach stemmed from a deep understanding of the business problem and using statistics and Data Science tools to generate insights for decision-making.   
 
 * **What Didn't Work:**
 
